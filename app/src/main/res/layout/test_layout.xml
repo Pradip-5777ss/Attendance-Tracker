@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+       >
+
+       <RadioButton
+           android:id="@+id/PresentradioButton"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginRight="@dimen/activity_horizontal_margin"
+           android:focusable="false"
+           android:layout_weight="1"
+           android:focusableInTouchMode="false"
+           android:text="P" />
+
+       <RadioButton
+            android:id="@+id/AbsentradioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:focusable="false"
+            android:layout_weight="1"
+			android:focusableInTouchMode="false"
+            android:text="A" />
+
+
+
+   </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        >
+        <Button
+            android:id="@+id/attendanceSubmitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#757575"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@drawable/roundedbutton"
+            android:text="Submit" />
+
+    </RadioGroup>
+
+</LinearLayout>

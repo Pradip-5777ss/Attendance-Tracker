@@ -1,0 +1,261 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="700dp" >
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:id="@+id/textViewFormName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registration"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="95dp"
+            android:text="First Name"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/textViewFirstName"
+            android:layout_alignLeft="@id/textViewFirstName"
+            android:layout_alignRight="@id/textViewFirstName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/roundedtextview"
+            android:hint="firstname"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/textViewLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextFirstName"
+            android:layout_alignRight="@id/editTextFirstName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/editTextFirstName"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Last Name"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/textViewLastName"
+            android:layout_alignLeft="@+id/textViewLastName"
+            android:layout_alignRight="@id/textViewLastName"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/roundedtextview"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:hint="lastname"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:layout_alignStart="@+id/textViewLastName" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@id/textViewPhone"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/textViewPhone"
+            android:layout_alignLeft="@id/textViewPhone"
+            android:background="@drawable/roundedtextview"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:hint="id"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/textViewUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@id/editTextPhone"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignLeft="@+id/editTextPhone"
+            android:layout_below="@+id/editTextPhone"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Institute Name"
+            android:textColor="#FFFFFF" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_below="@+id/editTextPassword"
+            android:layout_alignLeft="@id/editTextPassword"
+            android:layout_alignRight="@id/editTextPassword"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="45dp"
+            >
+
+
+            <Button
+                android:id="@+id/RegisterButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/roundedbutton"
+                android:backgroundTint="#6200EE"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="submit"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/textViewPassword"
+            android:layout_alignRight="@id/textViewPassword"
+            android:background="@drawable/roundedtextview"
+            android:layout_alignLeft="@id/textViewPassword"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/editTextUserName"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_below="@id/textView1"
+            android:layout_alignRight="@id/editTextUserName"
+            android:layout_alignLeft="@id/textView1"
+            android:background="@drawable/roundedtextview"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/textViewPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/editTextUserName"
+            android:layout_alignRight="@id/editTextUserName"
+            android:layout_alignLeft="@id/editTextUserName"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Password"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editTextaddr"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/textViewUserName"
+            android:layout_alignLeft="@id/textViewUserName"
+            android:layout_alignRight="@id/editTextaddr"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:paddingLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/roundedtextview"
+            android:hint="name" />
+
+        <TextView
+            android:id="@+id/textViewPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignRight="@id/editTextLastName"
+            android:layout_alignStart="@id/editTextLastName"
+            android:layout_alignLeft="@id/editTextLastName"
+            android:layout_below="@id/editTextLastName"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:textSize="14sp"
+            android:text="Faculty Id."
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@id/editTextaddr"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/editTextaddr"
+            android:layout_alignLeft="@id/editTextaddr"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Username"
+            android:textColor="#ffffff" />
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
